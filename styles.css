@@ -270,4 +270,57 @@ footer {
 
 a.content-footer-social {
     text-decoration: none;
-    margin:0 24px;;
+    margin:0 24px;
+}
+
+/* Responsive Styles  */ 
+ @media only screen and (max-width: 1024px) {
+    
+
+    .content-main {
+        font-size: 72px;
+        line-height: 100px;
+        width:100%;
+    }
+
+    header {
+        height:160px;
+      }
+
+    nav {
+      display:none;
+    }
+
+    .content-header {
+        justify-content: center;
+        max-width: 300px;
+    }
+
+    .search-icon {
+        display:none;
+    }
+
+    .about, .work, .content-news-posts {
+        flex-direction: column;
+    }
+
+    .content-about, .content-work {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .work {
+        flex-direction: column-reverse;
+    }
+
+    .content-subscribe, .content-contact-form div {
+        width: 480px;
+    }
+
+    .content-contact-form .message button {
+        margin-left:300px;
+    }
+    .content-about-image {
+        flex:1;
+    }
+  }
